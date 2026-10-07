@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=75,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "megumiu"
+version = "0.1.0a1"
+description = "Multi-camera acquisition and measurement tools for markerless VR tracking"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+camera = ["opencv-python>=4.11,<5", "numpy>=2,<3"]
+dev = ["build>=1.2,<2", "pyinstaller>=6.12,<7"]
+
+[project.scripts]
+megumiu = "megumiu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

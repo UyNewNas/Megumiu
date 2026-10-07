@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "max_arrival_skew_ms": 12.0,
+  "max_queue": 3,
+  "cameras": [
+    {"id": "left", "index": 0, "backend": "dshow", "width": 1280, "height": 720, "fps": 60, "fourcc": "MJPG", "buffer_size": 1},
+    {"id": "right", "index": 1, "backend": "dshow", "width": 1280, "height": 720, "fps": 60, "fourcc": "MJPG", "buffer_size": 1},
+    {"id": "rear", "index": 2, "backend": "dshow", "width": 1280, "height": 720, "fps": 60, "fourcc": "MJPG", "buffer_size": 1}
+  ]
+}
